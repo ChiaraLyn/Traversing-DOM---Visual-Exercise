@@ -1,0 +1,84 @@
+/* Variables Clr */
+* {
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+body {
+  height: auto;
+  overflow-y: auto;
+  background-image: radial-gradient(circle at 65% 15%, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 3%, transparent 3%, transparent 100%), radial-gradient(circle at 40% 33%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 3%, transparent 3%, transparent 100%), radial-gradient(circle at 9% 92%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 3%, transparent 3%, transparent 100%), radial-gradient(circle at 84% 0%, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 7%, transparent 7%, transparent 100%), radial-gradient(circle at 97% 94%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 7%, transparent 7%, transparent 100%), radial-gradient(circle at 13% 95%, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.02) 7%, transparent 7%, transparent 100%), radial-gradient(circle at 77% 8%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 7%, transparent 7%, transparent 100%), radial-gradient(circle at 58% 0%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 7%, transparent 7%, transparent 100%), radial-gradient(circle at 76% 71%, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.02) 7%, transparent 7%, transparent 100%), radial-gradient(circle at 88% 74%, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 7%, transparent 7%, transparent 100%), radial-gradient(circle at 74% 99%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 7%, transparent 7%, transparent 100%), radial-gradient(circle at 16% 56%, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.02) 7%, transparent 7%, transparent 100%), radial-gradient(circle at 25% 4%, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.02) 5%, transparent 5%, transparent 100%), radial-gradient(circle at 54% 83%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 5%, transparent 5%, transparent 100%), radial-gradient(circle at 70% 60%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 5%, transparent 5%, transparent 100%), radial-gradient(circle at 23% 73%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 5%, transparent 5%, transparent 100%), radial-gradient(circle at 63% 81%, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 5%, transparent 5%, transparent 100%), radial-gradient(circle at 56% 58%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 5%, transparent 5%, transparent 100%), radial-gradient(circle at 64% 68%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 5%, transparent 5%, transparent 100%), radial-gradient(circle at 52% 48%, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 5%, transparent 5%, transparent 100%), linear-gradient(90deg, #36339a, #941965);
+}
+
+h1 {
+  color: white;
+}
+
+ul {
+  margin-top: 1rem;
+}
+
+li,
+span {
+  color: black;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  padding: 0;
+}
+
+.btn {
+  min-width: 250px;
+  height: 40px;
+}
+
+.shadowed, .parent, #foreach_wrapper {
+  box-shadow: 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.016), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.024), 100px 100px 80px rgba(0, 0, 0, 0.04);
+}
+
+.transition, .parent, .parent .first_child, .parent .second_child, .parent .third_child {
+  transition: all 0.6 ease;
+}
+
+.parent {
+  background-color: white;
+  border: 1px solid #c20404;
+  padding: 2rem;
+}
+
+.parent .first_child {
+  background-color: white;
+  border: 1px solid #6c6cdf;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.parent .second_child {
+  background-color: white;
+  border: 1px solid #064b06;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.parent .third_child {
+  background-color: white;
+  border: 1px solid #ff5100;
+  padding: 1rem;
+}
+
+#foreach_wrapper {
+  background-color: white;
+  border: 1px solid gray;
+  padding: 1rem;
+}
+
+.box_sibling {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid gray;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Traversing DOM</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-12 my-5">
+        <div class="container">
+          <h1>Traversing DOM</h1>
+        </div>
+      </div>
+
+      <!-- ################################    --- BOX PARENT/CHILDREN ---    ######################################################## -->
+      <div class="col-lg-6">
+        <div class="container mb-4">
+          <div class="col-12">
+            <div class="parent" id="parent">
+              <h2 class="first_child" id="first_child">First Child</h2>
+              <h3 class="second_child" id="second_child">Second Child</h3>
+              <h4 class="third_child" id="third_child">Third Child</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ################################    --- BUTTONS ---    ######################################################## -->
+
+      <div class="col-lg-6">
+
+        <div class="container">
+
+          <!-- Select Parent -->
+          <div class="row">
+            <div class="col-12 mb-3">
+              <button type="button" class="btn btn-dark w-100 j_check" id="sel_parent">Select
+                Parent</button>
+              <span id="code_parent">const PARENT = document.getElementById('parent');</span>
+            </div>
+          </div>
+
+          <!-- ############################################################################################################ -->
+
+          <div class="row" id="btn_container">
+
+            <!-- Select First Child from Parent -->
+            <div class="col-lg-6 mb-3" id="first_wrapper">
+              <button type="button" class="btn btn-dark w-100 j_check" id="btn_first_from_parent">Select
+                First Child from Parent</button>
+            </div>
+
+            <!-- Select Parent From First child -->
+            <div class="col-lg-6" id="first_wrapper_from">
+              <button type="button" class="btn btn-primary w-100 j_check" id="btn_parent_from_first">Select Parent from
+                First Child</button>
+            </div>
+
+            <!-- ############################################################################################################ -->
+
+            <!-- Select Second Child from Parent-->
+            <div class="col-lg-6 mb-3" id="second_wrapper">
+              <button type="button" class="btn btn-dark w-100 j_check" id="btn_second_from_parent">Select
+                Second Child from Parent</button>
+            </div>
+
+            <!-- Select Parent from Second child -->
+            <div class="col-lg-6" id="second_wrapper_from">
+              <button type="button" class="btn btn-success w-100 j_check" id="btn_parent_from_second">Select Parent from
+                Second Child</button>
+            </div>
+
+            <!-- ############################################################################################################ -->
+
+            <!-- Select Third Child from Parent -->
+            <div class="col-lg-6 mb-3" id="third_wrapper">
+              <button type="button" class="btn btn-dark w-100 j_check" id="btn_third_from_parent">Select
+                Third Child from Parent</button>
+            </div>
+
+            <!-- Select Parent from Third Child -->
+            <div class="col-lg-6" id="third_wrapper_from">
+              <button type="button" class="btn btn-warning w-100 j_check" id="btn_parent_from_third">Select Parent from
+                Third Child</button>
+            </div>
+
+            <!-- ############################################################################################################ -->
+
+            <!-- Foreach -->
+            <div class="col-12 d-flex flex-column mt-5" id="foreach_wrapper">
+              <h4 class="mb-3">Using Foreach to select Parent</h4>
+              <button type="button" class="btn btn-dark mb-3 btn_foreach j_check" id="foreach_first">We
+                all Select Parent using Foreach</button>
+              <button type="button" class="btn btn-dark mb-3 btn_foreach j_check" id="foreach_second">We
+                all Select Parent using Foreach</button>
+              <button type="button" class="btn btn-dark btn_foreach j_check" id="foreach_third">We all
+                Select Parent using Foreach</button>
+            </div>
+
+          </div><!-- .row -->
+
+        </div><!-- .container -->
+
+      </div>
+
+      <!-- ################################    --- BOX PARENT/CHILDREN/SIBLING ---    ######################################################## -->
+
+      <div class="col-lg-6">
+        <div class="container box_sibling mt-5">
+          <div class="row">
+            <div class="col-12">
+              <h2 id="title">Title</h2>
+              <h2 id="sib1">Sibling</h2>
+              <h2 id="sib2">Sibling</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="container box_sibling mt-5">
+          <div class="row">
+            <div class="col-6 d-flex flex-column">
+              <button class="btn btn-outline-info j_check mb-4" id="btn_title">Select Title</button>
+              <button class="btn btn-outline-success j_check mb-4" id="btn_sib1">Select Title Direct
+                Sibling</button>
+              <button class="btn btn-outline-danger j_check" id="btn_sib2">Select Title Indirect
+                Sibling</button>
+            </div>
+            <div class="col-6 d-flex flex-column">
+              <span class="mb-5" id="show_code1"></span>
+              <span class="mb-5" id="show_code2"></span>
+              <span id="show_code3"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  <script src="assets/app.js"></script>
+
+</body>
+
+</html>
